@@ -1,0 +1,11 @@
+#include<stdio.h>
+#include<conio.h>
+int fact()
+{
+    int n,mul;
+    printf("enter the number whose factorial is to be find");
+    scanf("%d",n);
+    for (int i=1;i<n; i++)
+    mul=mul*i;
+    return 0;
+}
