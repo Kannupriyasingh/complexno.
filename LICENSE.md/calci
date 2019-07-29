@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int a,b;
+    //operator '+','-','*','/','%';
+    char operator;
+    float result=0;
+
+    printf(" \n please enter a operator (+,-,*,/,%) :");
+    scanf("%c",&operator);
+    printf(" \n enter two numerical value ");
+    scanf("%d%d",&a,&b);
+    switch(operator)
+   {
+    case'+': {result=a+b;
+        printf("sum of %d and %d numbers %f",&a,&b,result);break;}
+    case'-':result=a-b;
+        printf("difference of %d and %d numbers %f",&a,&b,result);break;
+    case'*':result=a*b;
+        printf("multiplication of %d and %d numbers %f",&a,&b,result);break;
+    case'/':result=a/b;
+         printf("division of %d and %d numbers %f",&a,&b,result);break;
+    case'%':result=a%b;
+          printf("modulus of %d and %d numbers %f",&a,&b,result);break;
+    default:printf("you typed invalid input");
+   }
+
+    return 0;
+}
